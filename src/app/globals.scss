@@ -1,19 +1,21 @@
 @use "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Mystical Forest Color Schema */
+  --background: rgba(42, 26, 74, 1); /* Deep Forest Violet */
+  --foreground: rgba(255, 255, 255, 1); /* White text for contrast */
+  
+  --primary: rgba(255, 140, 50, 1); /* Glowing Orange - Main focal point */
+  --secondary: rgba(176, 80, 176, 1); /* Misty Magenta - Atmospheric accent */
+  --accent: rgba(255, 96, 0, 1); /* Warm Red-Orange - Embers & glow */
+  
+  /* Legacy mappings */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
