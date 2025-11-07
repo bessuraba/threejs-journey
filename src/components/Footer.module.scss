@@ -1,7 +1,6 @@
 .footer {
-  border-top: 1px solid rgba(255, 140, 50, 0.2);
+  border-top: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
   padding: 3rem 2rem;
-  margin-top: 4rem;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -12,18 +11,18 @@
 }
 
 .text {
-  color: rgba(255, 255, 255, 0.7);
+  color: color-mix(in srgb, var(--foreground) 70%, transparent);
   font-size: 0.875rem; // text-sm
   margin-bottom: 1rem;
 }
 
 .link {
-  color: rgba(255, 140, 50, 1);
+  color: var(--primary);
   text-decoration: none;
   transition: color 300ms;
 
   &:hover {
-    color: rgba(255, 96, 0, 1);
+    color: var(--accent);
   }
 }
 

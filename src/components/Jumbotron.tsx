@@ -1,8 +1,9 @@
 import styles from './Jumbotron.module.scss';
+import clsx from 'clsx';
 
 export default function Jumbotron() {
   return (
-    <section className={styles.jumbotron}>
+    <section className={clsx(styles.jumbotron, 'p-16', 'md:p-24', 'lg:p-32')}>
       {/* Background Video */}
       <video
         autoPlay
@@ -14,13 +15,12 @@ export default function Jumbotron() {
         <source src="https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/jumbotron.mp4" type="video/mp4" />
       </video>
       
-      <div className={styles.content}>
-        <h1 className={styles.title}>
+      <div className={clsx(styles.content, 'max-w-5xl max-w-7md mx-auto')}>
+        <h1 className={clsx(styles.title, 'text-center', 'mb-16')}>
           Welcome to my Three.js journey
         </h1>
-        <p className={styles.description}>
-          Embark on an exciting adventure into the world of 3D graphics and WebGL. 
-          Learn how to create stunning 3D experiences that run smoothly in any browser.
+        <p className={clsx(styles.description, 'text-center')}>
+          My personal journey through Three.js — exploring how creative code and WebGL come together to build interactive 3D worlds in the browser.
         </p>
       </div>
     </section>

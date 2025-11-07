@@ -1,11 +1,11 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import styles from './Footer.module.scss';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.links}>
+        {/* <div className={styles.links}>
           <Link href="/" className={styles.link}>
             Home
           </Link>
@@ -18,7 +18,7 @@ export default function Footer() {
           <Link href="#" className={styles.link}>
             Contact
           </Link>
-        </div>
+        </div> */}
         <p className={styles.text}>
           © {new Date().getFullYear()} Three.js Journey. All rights reserved.
         </p>
