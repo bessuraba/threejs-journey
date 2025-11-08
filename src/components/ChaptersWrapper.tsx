@@ -16,7 +16,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'Basics'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/twilight_desert_serenity.jpg'}
-          priority={true}>
+          priority={true}
+          href={'/chapter-basics'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>Basics</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>During this chapter, I learned the essential foundations of <strong>WebGL</strong> and <strong>Three.js</strong>, and how to set up and control a 3D scene from scratch.</p>
           <ul className={styles.cardList}>
@@ -33,7 +34,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'Classic Techniques'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/mystical_jungle_camp.jpg'}
-          priority={false}>
+          priority={false}
+          href={'/chapter-classic-techniques'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>Classic Techniques</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>In this chapter, I deepened my understanding of <strong>lighting, shadows, and particle systems</strong>, and created complete interactive scenes.</p>
           <ul className={styles.cardList}>
@@ -48,7 +50,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'Advanced Techniques'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/motel_night_scene.jpg'}
-          priority={false}>
+          priority={false}
+          href={'/chapter-advanced-techniques'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>Advanced Techniques</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>This chapter focused on bringing realism and structure to 3D projects through <strong>physics</strong>, <strong>models</strong>, and <strong>optimized architecture</strong>.</p>
           <ul className={styles.cardList}>
@@ -63,7 +66,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'Shaders'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/cozy_low_poly_village.jpg'}
-          priority={false}>
+          priority={false}
+          href={'/chapter-shaders'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>Shaders</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>Here I learned to write and apply <strong>GLSL shaders</strong> to create unique visual effects and procedural materials.</p>
           <ul className={styles.cardList}>
@@ -78,7 +82,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'Extra'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/mystical_castle_landscape.jpg'}
-          priority={false}>
+          priority={false}
+          href={'/chapter-extra'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>Extra</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>This chapter covered important topics to <strong>enhance performance</strong>, <strong>visual quality</strong>, and <strong>user experience</strong> in Three.js projects.</p>
           <ul className={styles.cardList}>
@@ -91,7 +96,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'Portal Scene'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/low_poly_city.jpg'}
-          priority={false}>
+          priority={false}
+          href={'/chapter-portal-scene'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>Portal Scene</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>In this project chapter, I built a complete <strong>stylized scene</strong> integrating <strong>Blender</strong> and <strong>Three.js</strong> workflows.</p>
           <ul className={styles.cardList}>
@@ -104,7 +110,8 @@ export default function ChaptersWrapper() {
         <Card
           title={'React Three Fiber'}
           image={'https://hobcxfhiydtdxnxh.public.blob.vercel-storage.com/futuristic_space_station.jpg'}
-          priority={false}>
+          priority={false}
+          href={'/chapter-react-three-fiber'}>
           <h3 className={clsx(styles.cardTitle, 'mb-4')}>React Three Fiber</h3>
           <p className={clsx(styles.cardDescription, 'mb-4')}>In the final chapter, I integrated <strong>Three.js</strong> into <strong>React</strong> using <strong>React Three Fiber (R3F)</strong> and built interactive applications.</p>
           <ul className={styles.cardList}>

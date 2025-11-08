@@ -1,18 +1,22 @@
 import styles from './Card.module.scss';
 import clsx from 'clsx';
 import Image from 'next/image';
+import Link, { type LinkProps } from 'next/link';
 
-type CardProps = {
+type CardProps = LinkProps & {
   title: string;
   image: string;
   priority?: boolean;
   children: React.ReactNode;
 };
 
-export default function Card({ title, image, priority = false, children }: CardProps) {
+export default function Card({
+  title, image, priority = false, children, href }: CardProps) {
 
   return (
-    <div 
+    <Link 
+      href={href}
+      title={title}
       className={clsx(
         styles.card,
         // Mobile: vertical layout
@@ -47,7 +51,7 @@ export default function Card({ title, image, priority = false, children }: CardP
       )}>
         {children}
       </div>
-    </div>
+    </Link>
   );
 }
 

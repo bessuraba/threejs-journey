@@ -1,16 +1,11 @@
-import Link from 'next/link';
-import Footer from "@/components/Footer";
+import Link from 'next/link'
+import Footer from '@/components/Footer'
+import BackLink from '@/components/BackLink'
 
 export default function ChapterBasicsPage() {
   const lessons = [
-    { id: 1, title: 'Introduction to Three.js', href: '/chapter-basics/lesson-01' },
-    { id: 2, title: 'Basic Scene', href: '/chapter-basics/lesson-02' },
-    { id: 3, title: 'Transform Objects', href: '/chapter-basics/lesson-03' },
-    { id: 4, title: 'Animations', href: '/chapter-basics/lesson-04' },
-    { id: 5, title: 'Cameras', href: '/chapter-basics/lesson-05' },
-    { id: 6, title: 'Fullscreen and Resizing', href: '/chapter-basics/lesson-06' },
-    { id: 7, title: 'Geometries', href: '/chapter-basics/lesson-07' },
-    { id: 8, title: 'Debug UI', href: '/chapter-basics/lesson-08' },
+    { id: 1, title: 'Hello Three.js!', href: '/chapter-basics/hello-threejs' },
+    { id: 2, title: 'Transform Objects', href: '/chapter-basics/transform-objects' },
   ];
 
   return (
@@ -44,12 +39,7 @@ export default function ChapterBasicsPage() {
         </div>
 
         <div className="mt-8">
-          <Link
-            href="/"
-            className="inline-block text-orange-500 hover:text-orange-400 transition-colors"
-          >
-            ← Back to Home
-          </Link>
+          <BackLink href="/" text="Back to Home" />
         </div>
       </div>
     </section>
