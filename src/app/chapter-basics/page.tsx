@@ -4,7 +4,8 @@ import BackLink from '@/components/BackLink'
 
 export default function ChapterBasicsPage() {
   const lessons = [
-    { id: 1, title: 'Hello Three.js!', href: '/chapter-basics/hello-threejs' }
+    { id: 1, title: 'Hello Three.js!', href: '/chapter-basics/hello-threejs' },
+    { id: 2, title: 'Geometries', href: '/chapter-basics/geometries' }
   ];
 
   return (
